@@ -1,0 +1,205 @@
+/* ****************************************** */
+/*                    Head                    */
+/* ****************************************** */
+
+.head{
+    opacity : 0.85;
+    background-size: 1980px;
+    color:  white;
+    line-height: 65px;
+    font-size: 25px;
+    text-align: left;
+    padding:    10px;
+    height: 150px;
+    animation-duration: 5s;
+    animation-delay: 15s;
+    animation: example 10s infinite;
+}
+
+/* ****************************************** */
+/*                    Body                    */
+/* ****************************************** */
+
+body{
+    margin: 0px;
+    background-size: 2000px;
+    background-image: url("./homepage2.jpg");
+    color:#fff;
+}
+
+/* ****************************************** */
+/*               Kai Photo                    */
+/* ****************************************** */
+
+.kaiPhoto{
+    -moz-border-radius-topleft: 56px;
+    -moz-border-radius-topright:0px;
+    -moz-border-radius-bottomleft:0px;
+    -moz-border-radius-bottomright:56px;
+    -webkit-border-top-left-radius:56px;
+    -webkit-border-top-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -webkit-border-bottom-right-radius:56px;
+    border-top-left-radius:56px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:56px;
+
+    /* original angle setting */
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -webkit-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -moz-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -o-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -ms-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+}
+
+/* hover angle setting */
+.kaiPhoto:hover{
+    transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -o-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+}
+
+/* ****************************************** */
+/*                   Blocks                   */
+/* ****************************************** */
+
+.block{
+    background: rgba(0, 0, 0, 0);
+    width:  36%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+.blockLeft{
+    float:  left;
+    font-family: Microsoft JhengHei;
+    background: rgba(0, 0, 0, 0.45);
+    width:  30%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    line-height:    30px;
+    font-size:  14px;
+    border-radius: 30px;
+}
+
+.blockRight{
+    float:  right;
+    font-family: Microsoft JhengHei;
+    background: rgba(0, 0, 0, 0.45);
+    width:  30%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    line-height:    30px;
+    font-size:  14px;
+    border-radius: 30px;
+}
+
+h2{
+    text-align: right;
+    color:      #DBFFD6;
+    font-size:  25px;
+}
+
+h3{
+    color:      #DBFFD6;   
+    font-size:  20px;
+}
+
+.link{
+    color:  #FCC2FF;
+}
+
+/* #Sun Flower Button
+==================================================*/
+.sun-flower-button {
+  position: relative;
+  vertical-align: top;
+  width: 13%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f1c40f;
+  border: 0;
+  border-bottom: 2px solid #e2b607;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e2b607;
+  box-shadow: inset 0 -2px #e2b607;
+  border-radius: 5px;
+  display: inline-block;
+}
+.sun-flower-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* #Turquoise Flat Button
+==================================================*/
+.turquoise-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+  border-radius: 5px;
+}
+.turquoise-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* #Alizarin Flat Button
+==================================================*/
+.alizarin-flat-button {
+  position: relative;
+  vertical-align: top;
+  float: right;
+  width: 80%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
+  border-radius: 5px;
+  display: inline-block;
+}
+.alizarin-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

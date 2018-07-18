@@ -1,0 +1,263 @@
+/* ****************************************** */
+/*                    Head                    */
+/* ****************************************** */
+
+.head{
+    opacity : 0.85;
+    background-size: 1980px;
+    color:  white;
+    line-height: 65px;
+    font-size: 25px;
+    text-align: left;
+    padding:    10px;
+    height: 150px;
+    animation-duration: 5s;
+    animation-delay: 15s;
+    animation: example 10s infinite;
+}
+
+/* ****************************************** */
+/*                    Body                    */
+/* ****************************************** */
+
+body{
+    margin: 0px;
+    background-size: 2000px;
+    background-image: url("./back.png");
+    color:#fff;
+}
+
+        #status-box {
+            background:     black;
+            color:          #64FFDA;
+            font-size:      30px;
+            text-align:     center;
+            display:        block;
+            margin:         0 auto;
+            border-radius: 10px;
+            width:          100%;
+        }
+        
+        #chat {
+            width: 100%;
+        }
+        
+        #content {
+            width: 99%;
+            height: 300px;
+            padding: 0px 0px 2% 0px;
+            border: 3px solid rgb(77, 77, 77);
+            border-radius: 10px;
+            overflow: auto;
+            float: right;
+            background-color: rgba(77, 77, 77, 0.5);
+        }
+        
+        input[name="msg"] {
+            width: 99%;
+            float: right;
+            border: 3px solid rgb(41, 182, 37);
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgba(245, 245, 245, 0.88);
+            height: 30px;
+            color:  gray;
+        }
+        
+        .name {
+            width: 90%;
+            display: inline-block;
+            margin: 1% 0% 0% 1%;
+            color: white;
+        }
+        
+        .msg {
+            display: inline-block;
+            margin: 2% 0% 0% 2%;
+            padding: 1%;
+            background-color: rgb(157, 170, 255);
+            border-radius: 5px;
+            max-width: 66%;
+
+        }
+        
+        .msg_from_me {
+            margin: 2% 2% 0% 0%;
+            padding: 1%;
+            float: right;
+            background-color:   rgb(255, 52, 100);
+            border-radius: 5px;
+            max-width: 66%;
+        }
+
+        .server_msg{
+            display: inline-block;
+            margin: 2% 0% 0% 2%;
+            padding: 1%;
+            background-color: #6EB5FF;
+            border-radius: 5px;
+            max-width: 66%;
+        }
+
+        /* --------------------*/
+        /* -----kai's CSS -----*/
+        /* --------------------*/
+
+        .myname {
+            width: 90%;
+            margin: 1% 1% 0% 0%;
+            text-align: right;
+            float: right;
+        }
+        * { 
+            padding: 0; 
+            margin: 0;
+            font-family: 'Allerta', arial, Tahoma; 
+        }
+        
+        canvas { 
+            background: rgba(245, 245, 245, 0.88);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .canvasContainer{
+            width:  30%;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .chatRoom{
+            width:  35%;
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+        }
+        
+        #words{
+            background: 	black;
+            color:			#64FFDA;
+            font-size: 		30px;
+            text-align:		center;
+            display: 		block;
+            margin: 		0 auto;
+            width:			460px;
+        }
+        
+        #words2{
+            background: 	black;
+            color:			#64FFDA;
+            font-size: 		30px;
+            text-align:		center;
+            display: 		block;
+            margin: 		0 auto;
+            width:			460px;
+        }
+
+        /* #Sun Flower Button
+==================================================*/
+.sun-flower-button {
+  position: relative;
+  vertical-align: top;
+  width: 13%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f1c40f;
+  border: 0;
+  border-bottom: 2px solid #e2b607;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e2b607;
+  box-shadow: inset 0 -2px #e2b607;
+  border-radius: 5px;
+  display: inline-block;
+}
+.sun-flower-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+}
+
+/* #Belize Hole Sea Flat Button
+==================================================*/
+.belize-hole-flat-button {
+  position: relative;
+  vertical-align: top;
+  float: right;
+  width: 80%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #2980b9;
+  border: 0;
+  border-bottom: 2px solid #2475ab;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2475ab;
+  box-shadow: inset 0 -2px #2475ab;
+  border-radius: 5px;
+  display: inline-block;
+}
+.belize-hole-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* #Alizarin Flat Button
+==================================================*/
+.alizarin-flat-button {
+  position: relative;
+  vertical-align: top;
+  float: right;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #e74c3c;
+  border: 0;
+  border-bottom: 2px solid #db4334;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #db4334;
+  box-shadow: inset 0 -2px #db4334;
+  border-radius: 5px;
+  display: inline-block;
+}
+.alizarin-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

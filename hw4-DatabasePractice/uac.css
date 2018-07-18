@@ -1,0 +1,59 @@
+body {
+	font-size: 			18px;
+	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
+	background-color:	#00CED1;
+	text-align:			center;
+	width: 				80%;
+	margin: 			1cm auto;
+	background-size: 	2000px;
+    background-image: 	url("background.jpg");
+    color:				#fff;
+}
+
+a:visited {color: #9de5ff;}
+a:link {color: #9de5ff;}
+
+h1{
+	color:	black;
+	font-size: 35px;
+	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
+}
+
+h2{
+	color: #9a9a9a;
+}
+
+.linkUp{
+	color:	black;
+	font-size: 24px;
+	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
+}
+
+
+table { 
+	border-style:		solid;
+	border-color:		#F8F8F8;
+	margin:				auto;
+	text-align:			center;
+	empty-cells:		show;
+	background-color:	rgba(0, 0, 0, 0.5);
+	width:				100%;
+}
+th,td {
+	color: 				#d2ff9d;
+	border-style:		outset;
+	border-color:		#EEE;
+	background-color:	rgba(255, 81, 38, 0);
+	padding:			5px;
+	vertical-align: 	central;
+}
+
+th	{color:	#9de5ff;}
+
+td.school { 
+	text-align: left;
+}
+
+input #goPage {
+	text-align:center;
+}

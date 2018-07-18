@@ -1,0 +1,785 @@
+/* ****************************************** */
+/*              Global Reset                  */
+/* ****************************************** */
+
+*{
+    font-family: 'Allerta', arial, Tahoma;
+    font-size: 20px;
+}
+
+/* ****************************************** */
+/*                    Head                    */
+/* ****************************************** */
+
+.head{
+    background-image: url("head.jpg");
+    opacity : 0.85;
+    background-size: 1980px;
+    color:  white;
+    line-height: 65px;
+    font-size: 25px;
+    text-align: left;
+    padding:    10px;
+    height: 650px;
+    animation-duration: 5s;
+    animation-delay: 15s;
+    animation: example 15s infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {background-image: url("head.jpg")}
+    1%   {background-image: url("head.jpg")}
+    19%  {background-image: url("head2.jpg")}
+    20%  {background-image: url("head2.jpg")}
+    21%  {background-image: url("head2.jpg")}
+    38%  {background-image: url("head4.jpg")}
+    39%  {background-image: url("head4.jpg")}
+    40%  {background-image: url("head4.jpg")}
+    53%  {background-image: url("head5.jpg")}
+    54%  {background-image: url("head5.jpg")}
+    55%  {background-image: url("head5.jpg")}
+    67%  {background-image: url("head6.jpg")}
+    68%  {background-image: url("head6.jpg")}
+    69%  {background-image: url("head6.jpg")}
+    82%  {background-image: url("head7.jpg")}
+    83%  {background-image: url("head7.jpg")}
+    84%  {background-image: url("head7.jpg")}
+    100% {background-image: url("head.jpg")}
+}        
+
+/* ****************************************** */
+/*                    Body                    */
+/* ****************************************** */
+
+body{
+    margin: 0px;
+    background-size: 2000px;
+    background: linear-gradient(to bottom, #7700aa, #000000);
+    color:#fff;
+}
+
+/* ****************************************** */
+/*                    div                     */
+/* ****************************************** */
+
+div.gallery {
+    margin: 5px;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ****************************************** */
+/*               Kai Photo                    */
+/* ****************************************** */
+
+.kaiPhoto{
+    -moz-border-radius-topleft: 56px;
+    -moz-border-radius-topright:0px;
+    -moz-border-radius-bottomleft:0px;
+    -moz-border-radius-bottomright:56px;
+    -webkit-border-top-left-radius:56px;
+    -webkit-border-top-right-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    -webkit-border-bottom-right-radius:56px;
+    border-top-left-radius:56px;
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:56px;
+
+    /* original angle setting */
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -webkit-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -moz-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -o-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+    -ms-transform: rotate(4deg) scale(0.9) skew(1deg) translate(10px);
+}
+
+/* hover angle setting */
+.kaiPhoto:hover{
+    transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -o-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(0.87) skew(1deg) translate(0px);
+}
+
+/* ****************************************** */
+/*            List Setting                    */
+/* ****************************************** */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ****************************************** */
+/*                   Blocks                   */
+/* ****************************************** */
+
+.block{
+    font-family: Microsoft JhengHei;
+    background: rgba(0, 0, 0, 0.55);
+    width:  60%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    line-height:    30px;
+    font-size:  20px;
+}
+
+.blockLeft{
+    font-family: Microsoft JhengHei;
+    background: rgba(0, 0, 0, 0.45);
+    width:  16%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    line-height:    30px;
+    font-size:  20px;
+}
+
+.blockRight{
+    font-family: Microsoft JhengHei;
+    background: rgba(0, 0, 0, 0.45);
+    width:  20%;
+    margin: 10px;
+    display:    inline-block;
+    vertical-align: top;
+    line-height:    30px;
+    font-size:  20px;
+}
+
+/* ****************************************** */
+/*                   Slideshow                */
+/* ****************************************** */
+
+
+
+
+/* ****************************************** */
+/*                   Navbar                   */
+/* ****************************************** */
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(1, 1, 1, 0);
+}
+
+/* Links inside the navbar */
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 1px 15px;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 1px 15px;
+  font-family: inherit;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  outline: none;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1px 15px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: DarkRed;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFF0F5;
+  min-width: 15px;
+  box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+    background-color: #000;
+}
+
+.intro-head{
+    color: #F08080;
+    padding-left: 40px;
+}
+
+.intro{
+    color: white;
+    padding-left: 40px;
+}
+
+.link{
+    color: #ADD8E6;
+    padding-left: 40px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1px 15px;
+  background-color: inherit;
+  font-family: inherit;       /* Important for vertical align on mobile phones */
+  margin: 0;                  /* Important for vertical align on mobile phones */
+}
+
+/* ****************************************** */
+/*            Block favicon                   */
+/* ****************************************** */
+
+.fa {
+    padding: 16px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #8B4513;
+    color: white;
+}
+
+/* Github */
+.fa-github {
+    background:   #778899;
+    color: white;
+}
+
+/* Line */
+.fa-google {
+    background:   #FF4500;
+    color: white;
+}
+
+/*  */
+.fa-youtube {
+    background:   #FF6347;
+    color: white;
+}
+
+/* ****************************************** */
+/*                   Footer                   */
+/* ****************************************** */
+
+footer { 
+    display: block;
+    color: #F0E68C;
+    text-align: center;
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+/* ****************************************** */
+/*               Containers                   */
+/* ****************************************** */
+
+/* Start  styling the page */
+.container-icon {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.container-audio {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+audio {
+  width:100%;
+}
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
+
+/* ****************************************** */
+/*            Colorful Bars                   */
+/* ****************************************** */
+
+.container-audio .colum1 {
+    width: 23px;
+    height: 5em;
+    border-radius: 5px;
+    margin: 0 7px 0 0;
+    display: inline-block;
+    position: relative;
+}
+.container-audio .colum1:last-child {
+    margin: 0;
+}
+.container-audio .colum1 .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to up, #7700aa, #8800ff);
+    position: absolute;
+    -webkit-animation: Rofa 10s infinite ease-in-out;
+    animation: Rofa 10s infinite ease-in-out;
+    bottom: 0;
+}
+.container-audio .colum1:nth-of-type(1) .row {
+    -webkit-animation-delay: 3.99s;
+    animation-delay: 3.99s;
+}
+.container-audio .colum1:nth-of-type(2) .row {
+    -webkit-animation-delay: 3.80s;
+    animation-delay: 3.80s;
+}
+.container-audio .colum1:nth-of-type(3) .row {
+    -webkit-animation-delay: 3.70s;
+    animation-delay: 3.70s;
+}
+.container-audio .colum1:nth-of-type(4) .row {
+    -webkit-animation-delay: 3.60s;
+    animation-delay: 3.60s;
+}
+.container-audio .colum1:nth-of-type(5) .row {
+    -webkit-animation-delay: 3.50s;
+    animation-delay: 3.50s;
+}
+.container-audio .colum1:nth-of-type(6) .row {
+    -webkit-animation-delay: 3.40s;
+    animation-delay: 3.40s;
+}
+.container-audio .colum1:nth-of-type(7) .row {
+    -webkit-animation-delay: 3.30s;
+    animation-delay: 3.30s;
+}
+.container-audio .colum1:nth-of-type(8) .row {
+    -webkit-animation-delay: 3.20s;
+    animation-delay: 3.20s;
+}
+.container-audio .colum1:nth-of-type(9) .row {
+    -webkit-animation-delay: 3.10s;
+    animation-delay: 3.10s;
+}
+.container-audio .colum1:nth-of-type(10) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(11) .row {
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.container-audio .colum1:nth-of-type(12) .row {
+    -webkit-animation-delay: 2.10s;
+    animation-delay: 2.10s;
+}
+.container-audio .colum1:nth-of-type(13) .row {
+    -webkit-animation-delay: 2.20s;
+    animation-delay: 2.20s;
+}
+.container-audio .colum1:nth-of-type(14) .row {
+    -webkit-animation-delay: 1.30s;
+    animation-delay: 1.30s;
+}
+.container-audio .colum1:nth-of-type(15) .row {
+    -webkit-animation-delay: 1.40s;
+    animation-delay: 1.40s;
+}
+.container-audio .colum1:nth-of-type(16) .row {
+    -webkit-animation-delay: 1.50s;
+    animation-delay: 1.50s;
+}
+.container-audio .colum1:nth-of-type(17) .row {
+    -webkit-animation-delay: 1.60s;
+    animation-delay: 1.60s;
+}
+.container-audio .colum1:nth-of-type(18) .row {
+    -webkit-animation-delay: 1.70s;
+    animation-delay: 1.70s;
+}
+.container-audio .colum1:nth-of-type(19) .row {
+    -webkit-animation-delay: 1.80s;
+    animation-delay: 1.80s;
+}
+.container-audio .colum1:nth-of-type(20) .row {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes Rofa {
+    0% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: yellow;
+    }
+
+    5% {
+        height: 100%;
+        -webkit-transform: translatey(15px);
+        transform: translatey(15px);
+        background-color: fuchsia;
+    }
+    10% {
+        height: 90%;
+        transform: translatey(0);
+        -webkit-transform: translatey(0);
+        background-color: bisque;
+    }
+
+    15% {
+        height: 80%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    20% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: blue;
+    }
+    25% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: cornflowerblue;
+    }
+    30% {
+        height: 70%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+        background-color: bisque;
+    }
+    35% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    40% {
+        height: 60%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: yellow;
+    }
+    45% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    50% {
+        height: 50%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    55% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: yellow;
+    }
+    60% {
+        height: 40%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    65% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: yellow;
+    }
+    70% {
+        height: 30%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    75% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    80% {
+        height: 20%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: yellow;
+    }
+    85% {
+        height: 0%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    90% {
+        height: 10%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: fuchsia;
+    }
+    95% {
+        height: 5%;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: cornflowerblue;
+    }
+    100% {
+        height: 0;
+        -webkit-transform: translatey(0);
+        transform: translatey(0);
+
+        background-color: yellow;
+    }
+}
+
+/* ****************************************** */
+/*               Clock Setting                */
+/* ****************************************** */
+
+.clock{
+  color: #17D4FE;
+  font-size: 30px;
+  letter-spacing: 7px;
+}
+
+/* ****************************************** */
+/*               Screen Size                  */
+/* ****************************************** */
+
+@media screen and (max-width: 480px){
+    .navbar a{
+        float: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 1px 15px;
+        font-family: inherit;
+        margin: 0;
+    }
+    .dropdown{
+        float: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 1px 15px;
+        font-family: inherit;
+        text-decoration: none;
+        border: none;
+        margin: 0;
+        outline: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFF0F5;
+        min-width: 160px;
+        box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 1px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .blockLeft{
+        width: 65%;
+
+    }
+
+    .block{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .blockRight{
+        width: 80%;
+        float: center;
+    }
+
+    .head{
+        font-size: 13px;
+        line-height: 45px;
+    }
+
+    *{
+        font-family: 'Allerta', arial, Tahoma;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .navbar a{
+        float: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 1px 15px;
+        font-family: inherit;
+        margin: 0;
+    }
+    .dropdown{
+        float: center;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 1px 15px;
+        font-family: inherit;
+        text-decoration: none;
+        border: none;
+        margin: 0;
+        outline: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFF0F5;
+        min-width: 160px;
+        box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 1px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .blockLeft{
+        width: 65%;
+
+    }
+
+    .block{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .blockRight{
+        width: 80%;
+        float: center;
+    }
+
+    .head{
+        font-size: 17px;
+        line-height: 45px;
+    }
+
+    *{
+        font-family: 'Allerta', arial, Tahoma;
+        font-size: 16px;
+    }
+}

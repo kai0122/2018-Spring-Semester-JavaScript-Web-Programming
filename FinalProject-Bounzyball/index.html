@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Final Project</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/deafult.css" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.png" />
+    <script>
+        var socket = io();
+    </script>
+    <script>
+        function play(){
+            var audio = document.getElementById("music");
+            audio.muted = !audio.muted;
+        }
+    </script>
+    <script>
+        function Exit() {
+            var x=confirm('Are You sure want to exit:');
+            if(x) window.close();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <audio id="sound" src="./bounce.mp3" loop="0" volume="10" hidden="true" ></audio>
+    </div>
+
+    <div class = "canvasContainer">
+		<a id = "words">SCORE:  BALL:</a>
+		<canvas id="myCanvas" width="460" height="680"></canvas>
+		<script type="text/javascript" src="game/gameJS.js"></script>
+    </div>
+    
+    <div id="container" class="chatRoom">
+        <div id="status-box">Room Name: <span id="roomName">-</span> <br> Server: <span id="status">-</span> / <span id="online">0</span> online.</div>
+        <div id="chat">
+            <div id="content"></div>
+            <form id="form">
+                <input type="hidden" name="name" id="name">
+                <input type="hidden" name="room" id="room">
+                <input type="text" name="msg" id="msg" placeholder="Press enter to send" autocomplete="off">
+            </form>
+        </div>
+        <script type="text/javascript" src="chat/chat.js"></script>
+        <p><input type="image" src="./sound.png" class="sun-flower-button" style="width: auto;" onclick="play()">
+        <input type="button" class="belize-hole-flat-button" value="NEW GAME" onclick="window.location='/index.html';">
+        <p><input type="button" class="alizarin-flat-button" value="LEAVE ROOM"  onclick="window.location='/';">
+        <audio id="music" src="./music.mp3" loop="1" volume="50" hidden="true" autoplay="true"></audio>
+    </div>
+
+    <div class = "canvasContainer">
+		<a id = "words2">SCORE:  BALL:</a>
+		<canvas id="myCanvas2" width="460" height="680"></canvas>
+		<script type="text/javascript" src="game/gameOther.js"></script>
+	</div>
+
+</body>
+
+</html>

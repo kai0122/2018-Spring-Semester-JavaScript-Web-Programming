@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Final Project</title>
+    <link rel="stylesheet" href="css/home.css" type="text/css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <script>
+        function play(){
+            var audio = document.getElementById("audio");
+            audio.muted = !audio.muted;
+        }
+    </script>
+    <script>
+        function Exit() {
+            var x=confirm('Are You sure want to exit:');
+            if(x) window.close();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <audio id="audio" src="./musicGame.mp3" loop="1" volume="50" hidden="true" autoplay="true"></audio>
+    </div>
+    <!-- ****************************************************************************************************************** -->
+    <!--                                                Block left                                                          -->
+    <!-- ****************************************************************************************************************** -->
+
+    <div class="blockLeft">
+        <div class="intro-head">
+            <p><img src="./kai.jpg" align="right" style="width: 200px; margin: 50px; " class="kaiPhoto"/></p>
+            <h2>Maker</h2>
+            <div>
+                <h3>Personal Information</h3>
+                <ul>
+                    <li class="intro"> Name: 楊博凱 / Boris Yang</li>
+                    <li class="intro"> Birthday: Jan 22, 1997</li>
+                    <li class="intro"> 學號: 0416303</li>
+                    <li class="intro"> Sign: Aquarius</li>
+                    <li class="intro"> Dep.: Computer Science</li>
+                </ul>
+            </div>          
+            <div>
+                <h3>My Github personal page</h3>
+                <p><a href="https://github.com/kai0122" class="link">My Github</a></p>
+            </div>
+            <div>
+                <h3>Contact Me</h3>
+                <ul>
+                <li class="intro">E-mail: <a href="mailto:show08822@gmail.com" class="link">show08822@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ****************************************************************************************************************** -->
+    <!--                                                BLock                                                               -->
+    <!-- ****************************************************************************************************************** -->
+
+    <div class="block" >
+        <img src="./homeBall.jpg" align="center" style="width: 100%; margin: 0px; border-radius: 50px;"/>
+        <input type="button" class="turquoise-flat-button" value="START GAME" onclick="window.location='/index.html';">
+        <input type="image" src="./sound.png" class="sun-flower-button" onclick="play();">
+        <input type="button" class="alizarin-flat-button" value="EXIT"  onclick="Exit();">
+    </div>
+
+    <!-- ****************************************************************************************************************** -->
+    <!--                                                Block right                                                         -->
+    <!-- ****************************************************************************************************************** -->
+
+    <div class="blockRight">
+        <div class="intro-head">
+            <p><img src="./pung.jpg" align="right" style="width: 200px; margin: 50px; " class="kaiPhoto"/></p>
+            <h2>Maker</h2>
+            <div>
+                <h3>Personal Information</h3>
+                <ul>
+                    <li class="intro"> Name: 彭淮蔚 / Way Peng</li>
+                    <li class="intro"> Birthday: May 21, 1997</li>
+                    <li class="intro"> 學號: 0416082</li>
+                    <li class="intro"> Sign: Taurus</li>
+                    <li class="intro"> Dep.: Computer Science</li>
+                </ul>
+            </div>          
+            <div>
+                <h3>My Github personal page</h3>
+                <p><a href="https://github.com/boy860521" class="link">My Github</a></p>
+            </div>
+            <div>
+                <h3>Contact Me</h3>
+                <ul>
+                <li class="intro">E-mail: <a href="mailto:boy860521@gmail.com" class="link">boy860521@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

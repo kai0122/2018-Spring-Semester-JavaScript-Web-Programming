@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>大學聯招查榜系統</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="uac.css" >
+</head>
+<body>
+<h1>大學聯招查榜系統</h1>
+<h3><a class = "linkUp" href="/listSchool">各校錄取名單</a></h3>
+{{variable}}
+﻿<hr>
+<form action="/find" method="post">
+	<h2>請輸入准考證號碼</h2>
+	<input type="text" name="eid" value="" size=8 maxlength=8>
+	<input type="submit" name="query" value="查榜" >
+	<input type="reset"  value="取消" >
+</form>
+<hr>
+﻿<hr>
+<form action="/findName" method="post">
+	<h2>請輸入文字</h2>
+	<input type="text" name="name" value="" size=8 maxlength=8>
+	<input type="submit" name="query" value="查榜" >
+	<input type="reset"  value="取消" >
+</form>
+<hr>
+</body>
+</html>
+

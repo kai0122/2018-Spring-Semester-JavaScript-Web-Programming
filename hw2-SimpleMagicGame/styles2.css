@@ -1,0 +1,50 @@
+body{
+	background-image: url("background.jpg");
+}
+
+table, td{
+	border: 1px gray solid;
+	font-family: 'Allerta', arial, Tahoma;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.colored{
+	background-color: black;
+	color: #17D4FE;
+	animation-duration: 5s;
+    animation-delay: 15s;
+    animation: example 10s infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {background-color: black color: #17D4FE;	}
+    20%  {background-color: #FF0000; color: white;	}
+    21%  {background-color: #FF0000; color: white;	}
+    39%  {background-color: #FFFF00; color: black;	}
+    40%  {background-color: #FFFF00; color: black;	}
+    54%  {background-color: #00FA9A; color: black;	}
+    55%  {background-color: #00FA9A; color: black;	}
+    68%  {background-color: #87CEFA; color: black;	}
+    69%  {background-color: #87CEFA; color: black;	}
+    83%  {background-color: #7B68EE; color: white;	}
+    84%  {background-color: #7B68EE; color: white;	}
+    100% {background-color: black color: #17D4FE;	}
+}
+
+table{
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+
+td{
+	text-align: center;	
+}
+
+div{
+	width: 50%;
+	float: left;
+	padding-left: 25%;
+	height: 300px;
+}
